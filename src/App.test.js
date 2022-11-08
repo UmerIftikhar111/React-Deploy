@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import '@testing-library/jest-dom/extend-expect';
+import List from './List';
 
 test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByTestId("comp");
-  expect(linkElement).toBeInTheDocument();
+  render(<List />);
+  const linkElement = screen.getByTestId("lister");
+  expect(linkElement).toHaveTextContent('Bat');
 });
