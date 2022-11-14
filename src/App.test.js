@@ -9,7 +9,7 @@ test('have content test', () => {
   expect(linkElement).toHaveTextContent('Bat');
 });
 
-test('component exists test', () => {
+test('component  test', () => {
   render(<App />);
   const linkElement = screen.getByTestId("comp");
   expect(linkElement).toBeInTheDocument();
